@@ -1,8 +1,11 @@
-myList = []
-a = int(input("Enter first num : "))
-b = int(input("Enter last num  : "))
+list1 = []
+n = int(input("Enter size of list "))
+for i in range(0, n):
+    e = int(input("Enter element of list "))
+    list1.append(e)
 
-print("All positive numbers in the range : ")
-for i in range(a, b):
+print("Positive numbers in", list1, "are: ")
+
+for i in list1:
     if i >= 0:
-	    print(i, end = " ")
+        print(i, end=" ")
